@@ -1,0 +1,30 @@
+=====================================
+		BELAJAR ES6 / ES2015
+=====================================
+
+
+0. intro ES6 dan setup babel ===============================================================================
+- kalo mau bikin aplikasi pake javascript di production maka kita harus pake babel utk ngecompile es6 menjadi javascript biasa (didukung oleh semua browser). karena ES6 ini belum disupport di semua browser. kecuali browser2 versi terbaru.
+- tapi kalo cuma utk development sendiri atau buat tools utk automasi sendri dan udah tau kalo browser nya disupport, kita nggak perlu pake babel.
+- install babel liat doc nya di babeljs.io setup
+
+
+1. var vs let vs const =====================================================================================
+//variable
+- var : bersifat function scope, artinya ketika kita mendefinisikan var maka kita akan dapat memanggilnya dimana aja. (variable global)
+- let & const : bersifat block scope, artinya dia hidupnya pada block block tertentu (di dalam fungsi misalnya).
+- let : jika ada nama variable yang sama pada block yg sama maka akan throw error (berbeda dengan var).
+- tetapi jika dimasukkan ke dalam sebuah block maka tidak akan terjadi error meskipun nama variable nya sama.
+- pada var meskipun kita mendefinisikannya di dalam sebuah block scope (fungsi) sebenarnya di balik layar dia tetap di definisikan secara global.
+- berbeda lagi dengan let, kalo let didefinisikan di dalam block, maka akan error jika dipanggil secara global.
+
+- const = sesuatu yang nilai nya tidak bisa diubah, bukan nggak bisa diubah sebenarnya, tp nggak bisa di re assign, kita bisa menambahkan dan mengubah nilai nya.
+- untuk contoh const coba bikin object person dengan atribut id dan nama.
+- kalo kita deklarasikan ulang object person maka akan error.
+- tapi kalo menambahkan atribut / mengubah nilai atribut ngga akan error. misal person.age = 21.
+- sementara kalo menggunakan let kita akan bisa reassign object.
+- nggak ada waktu yang baku kapan utk menggunakan var atau let. tapi kalo mau migrasi ke ES6 sebaiknya mulai sekarang menggunakan let aza.
+
+
+2. BERKENALAN DENGAN SYNTAX ARROW ==================================================================================================
+- 
