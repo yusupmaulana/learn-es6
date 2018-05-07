@@ -1,3 +1,27 @@
+// ==================================================================================
+// Default Parameter
+
+//fungsi secara Default mereturn (tanpa keyword return)
+generateTitle = () =>
+    'ini judul standar';
+
+createTag = (title = generateTitle(), tag = 'bebas') => {
+  // tag = tag || 'css'
+  // if(typeof tag === 'undefined'){
+  //   tag = 'css'
+  // }
+  console.log('Forum '+ title + " punya tag " + tag);
+}
+
+createTag()
+
+
+
+
+
+
+
+
 // ================================================================================
 // syntax arrow -- => -- function shorthand
 // var members = ['rizqi','dodi','qaiserlab','dodit'];
@@ -5,16 +29,16 @@
 //     console.log(member + " " + index);
 // });
 
-let SekolahKoding = {
-  members : ['rizqi','dodi','qaiserlab','dodit'],
-  getMembers(){
-    this.members.map((name) => {
-      console.log(this);
-    });
-  }
-};
-
-SekolahKoding.getMembers();
+// let SekolahKoding = {
+//   members : ['rizqi','dodi','qaiserlab','dodit'],
+//   getMembers(){
+//     this.members.map((name) => {
+//       console.log(this);
+//     });
+//   }
+// };
+//
+// SekolahKoding.getMembers();
 
 // ===============================================================================
 //var vs let vs const
