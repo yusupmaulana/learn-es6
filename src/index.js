@@ -1,26 +1,39 @@
+// =====================================================================================
+// Rest dan spread
+
+signIn = (...member) => {
+  console.log(member)
+}
+let username = 'yusup maualna'
+let password = '123'
+let umur     = 21
+signIn(username, password, umur)
+
+// signIn = (username, password, umur) => {
+//   console.log(username + ' punya password '+ password + ' umurnya '+ umur)
+// }
+// let data = ['yusup', '123', '21']
+// signIn(...data)
+
+
+
+
 // ==================================================================================
 // Default Parameter
 
 //fungsi secara Default mereturn (tanpa keyword return)
-generateTitle = () =>
-    'ini judul standar';
-
-createTag = (title = generateTitle(), tag = 'bebas') => {
-  // tag = tag || 'css'
-  // if(typeof tag === 'undefined'){
-  //   tag = 'css'
-  // }
-  console.log('Forum '+ title + " punya tag " + tag);
-}
-
-createTag()
-
-
-
-
-
-
-
+// generateTitle = () =>
+//     'ini judul standar';
+//
+// createTag = (title = generateTitle(), tag = 'bebas') => {
+//   // tag = tag || 'css'
+//   // if(typeof tag === 'undefined'){
+//   //   tag = 'css'
+//   // }
+//   console.log('Forum '+ title + " punya tag " + tag);
+// }
+//
+// createTag()
 
 // ================================================================================
 // syntax arrow -- => -- function shorthand
