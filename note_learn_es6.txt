@@ -27,4 +27,34 @@
 
 
 2. BERKENALAN DENGAN SYNTAX ARROW ==================================================================================================
-- 
+- syntax arrow -- => -- function shorthand
+- bisa menghapus keyword function dan di ganti dengan tanda =>
+- lakukan looping array dengan metode forEach() atau menggunakan metode map()
+- kalo pake syntax arrow kita nggak perlu lagi pake keyword return (jika di dalam fungsi tsb mengandung return)
+- kemudian kalo pake syntax arrow konteks this nya jadi berubah. this nya jadi mengacu ke object itu sendiri(kalo keyword function dihilangkan), berbeda dengan menggunakan keyword function yang this nya akan mengacu ke window.
+- inti dari syntax arrow ini adalah membuat function menjadi lebih singkat.
+
+
+3. DEFAULT PARAMETER
+==================================================================================================
+- Di ES6 kita sekarang bisa memberikan nilai default pada parameter ketika kita mengoper nilai.
+- sebelum ES6 kita bisa membuat default dengan membuat sebuah variable dan diisi nilai nya, kemudian di console log dengan parameter yang mandatory (nilai nya wajib)
+- parameter nggak cuma bisa diisi dengan string atau primitive variable lainnya, tapi bisa juga dengan mengoper sebuah fungsi yang sebelumnya telah di definisikan terlebih dahulu. very interesting.
+- nggak perlu lagi mengecek apakah ada nilai nya atau parameter tsb undefined.
+
+
+4. REST & SPREAD
+================================================================================================
+- rest dan spread masih tentang fungsi dan parameter.
+- pada contoh ada function signIn yang mengoper parameter username dan password, kemudian setelah mendefinisikan function tsb dan sebelum memanggil nya kita buat parameter utk function tsb dalam bentuk array. kemudian array tsb kita oper sebagai parameter ketika memanggil function signIn tadi signIn(data[0], data[1])
+- parameter diatas dapat diganti dengan (...data) maka dia akan mengambil semua nilai array nya dan memecahnya berdasarkan masing-masing parameter tsb. nggak peduli berapapun banyaknya parameternya .
+- logika nya bisa dibalik, kalo kita ngoper parameternya dalam beberapa variabel dan syntax triple dot nya kita letakan di function maka dia akan menjadi bentuk array (kebalikan dari tadi)
+
+
+5. template literal
+================================================================================================
+- template literal (template string)
+- template literal ini memudahkan kita dalam melakukan concatenate dengan readable contohnya. 
+`Member ${username} umurnya ${umur}`
+- dengan backtick ini (`) kita juga dapat membuat multiline.
+- dengan template literal ini kita bisa juga menjadikannya sebuah parameter ketika kita memanggil fungsi, dan di dalam fungsi tsb kita bisa memanipulasi nilai dari parameter nya sesuai dengan kebutuhan kita.
