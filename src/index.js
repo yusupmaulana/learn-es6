@@ -1,13 +1,45 @@
+// ======================================================================================
+// Template Literal || string literal || Template string
+
+let username = 'yusup'
+let umur     = 21
+//
+// let text = `Member ${username} umurnya ${umur}`
+//
+// let div = `
+//     <div>${username}</div>
+//     <p>${umur}</p>
+// `
+
+test = (strings, username, umur) => {
+  let string1 = strings[0]
+  let string2 = strings[1]
+
+  console.log(username)
+}
+
+let output = test`nama saya adalah ${username} umurnya ${umur}`
+
+// console.log(div)
+
+
+
+
+
+
+
+
+
 // =====================================================================================
 // Rest dan spread
 
-signIn = (...member) => {
-  console.log(member)
-}
-let username = 'yusup maualna'
-let password = '123'
-let umur     = 21
-signIn(username, password, umur)
+// signIn = (...member) => {
+//   console.log(member)
+// }
+// let username = 'yusup maualna'
+// let password = '123'
+// let umur     = 21
+// signIn(username, password, umur)
 
 // signIn = (username, password, umur) => {
 //   console.log(username + ' punya password '+ password + ' umurnya '+ umur)
