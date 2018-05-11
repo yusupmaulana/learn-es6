@@ -58,3 +58,54 @@
 `Member ${username} umurnya ${umur}`
 - dengan backtick ini (`) kita juga dapat membuat multiline.
 - dengan template literal ini kita bisa juga menjadikannya sebuah parameter ketika kita memanggil fungsi, dan di dalam fungsi tsb kita bisa memanipulasi nilai dari parameter nya sesuai dengan kebutuhan kita.
+
+
+6. SHORTHAND DAN DESTRUCTURING OBJECT
+=================================================================================================
+- dalam object kita bisa menyingkat ketika assign suatu nilai ke dalam variable, kalo nama key dengan nama variabel baru nya sama, maka key nya bisa dihapus.
+- tidak hanya pada primitive datatype, tapi kita juga bisa melakukannya pada fungsi.
+- berikutnya yaitu destructuring object. yaitu untuk memisahkan properti atau fungsi yang ada di dalam objek. kita bisa assign ke variabel baru ketika kita bisa memisahkan data2 nya.
+- kita juga bisa melakukan destructuring pada array. misal
+let umur = [1,2,3]
+let[a,b,c] = umur
+console.log(a+b+c)
+
+7. CLASS
+=================================================================================================
+- sama seperti pada bahasa program lain, pada ES6 juga terdapat fungsi yang otomatis dipanggil ketika kita membuat sebuah object yaitu constructor.
+- di dalam class juga kita dapat menyimpan fungsi (tidak hanya variable).
+- ketika kita mau mengakses sebuah variabel atau fungsi yang ada di dalam kelas itu sendiri harus menggunakan keyword this (keyword this mengacu ke class itu sendiri).
+- pada es6 kita juga bisa menerapkan konsep static, yang mana kita tidak perlu instansiasi objek utk dapat memanggil fungsi yang kita inginkan.
+
+8. Berkenalan Dengan Webpack
+==================================================================================================
+- simple nya webpack ini kalo kita punya banyak modul atau banyak dependensi, dia akan ngerubah menjadi satu file css js atau gambar. misah2in file statisnya kemudian dijadikan satu.
+- install webpack nya secara lokal ataupun global.
+- untuk menggunakan webpack nya biar lebih mudah berdasarkan dokumentasi nya kita bisa membuat satu file konfigurasi nya yaitu webpack.config.js (simpan di root project)
+- 2 key utama adalah tempat masuk file (entry) dan tempat keluarnya (output).
+- webpack ini dia bisa ngecompile juga sama seperti sebelumnya yang kita lakukan. cuma bedanya akan ada fitur-fitur di es6 seperti import dan export yang kita nggak bisa pake babel gitu aja.
+- webpack kita ini masih terpisah (belum ada hubungannya dengan babel). jadi yang perlu diingat babel utk translate dari es6 ke es5 biar bisa dibuka di semua browser. sementara webpack hanya sekedar file output yang hasil bundle dari file sebelumnya.
+- agar babel dan webpack terhubung maka kita perlu extra plugin namanya webpack babel-loader.
+- jadi sekarang setelah kita install babel-loader maka babel dan webpack sudah terhubung. ketika kita menjalankan perintah webpack file src akan di compile menjadi es5.
+
+9. EXPORT DAN IMPORT
+====================================================================================================
+- sekarang kita bisa misahin file javascript kita ke beberapa file. tapi beberapa file ini nggak di load satu persatu oleh html. melainkan kita gabungkan beberapa file tadi di satu file javascript.
+- hampir semua browser belum bisa implementasiin ini langsung, makanya kita harus menggunakan module bundler(seperti webpack yang udah kita install sebelumnya).
+- buat file di src/app/member.js kemudian isinya hanya satu variabel tp karena mau di pake di file lain maka gunakan keyword export.
+- untuk memanggilnya di file lain cukup gunakan keyword import {variabel} './app/member'
+- buat beberapa file baru untuk mencoba menggabungkan beberapa file tersebut ke dalam satu file.
+
+10. EXPORT DEFAULT
+======================================================================================================
+- export default adalah jika kita mau ada satu variabel atau satu kelas yang otomatis di import (di awal).
+- ketika mau export variable nya kita nggak perlu kasih nama, dan ketika di import variable nya kita bisa kasih nama bebas.
+
+
+11. KONSEP DASAR PROMISE
+======================================================================================================
+- promise ini simple nya yaitu seperti menggunakan ajax di jquery. ada function callback yang akan dipanggil ketika masuk ke kondisi tertentu.
+- untuk membuat promise contohnya sebagai berikut:
+let getMember = new Promise((resolve, reject) => { })
+- resolve artinya ketika berhasil dan reject artinya ketitka gagal.
+- sama seperti ajax di jquery promise ini bisa juga di chain. ketika berhasil maka dia akan masuk ke method .then((msg)=> {}) dan ketika gagal akan masuk ke method .catch((msg)=>{})
