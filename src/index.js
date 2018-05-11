@@ -1,3 +1,28 @@
+// ==============================================================
+// Class
+
+class Members {
+  constructor(name, umur){
+    this.name = name
+    this.umur = umur
+  }
+
+  getData(){
+    return `namanya ${this.name} umurnya ${this.umur}`
+  }
+
+  static getPoint(){
+    return ' Poinnya 40 '
+  }
+}
+
+let member = new Members('Yusup', 30)
+
+console.log(Members.getPoint())
+
+
+
+
 // ===========================================================
 // Shorthand dan Destructuring object.
 // name = 'yusup'
