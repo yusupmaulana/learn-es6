@@ -1,27 +1,32 @@
+// ==================================================================
+// Webpack module bundler
+
+const test = 'kerad euy!'
+console.log(test)
+
+//babel dan webpack masih terpisah, untuk membuatnya terhubung gunakan package babel-loader jadi sintaks es6 akan di ubah ke es5 dulu baru kemudian di bundle
+
 // ==============================================================
 // Class
 
-class Members {
-  constructor(name, umur){
-    this.name = name
-    this.umur = umur
-  }
-
-  getData(){
-    return `namanya ${this.name} umurnya ${this.umur}`
-  }
-
-  static getPoint(){
-    return ' Poinnya 40 '
-  }
-}
-
-let member = new Members('Yusup', 30)
-
-console.log(Members.getPoint())
-
-
-
+// class Members {
+//   constructor(name, umur){
+//     this.name = name
+//     this.umur = umur
+//   }
+//
+//   getData(){
+//     return `namanya ${this.name} umurnya ${this.umur}`
+//   }
+//
+//   static getPoint(){
+//     return ' Poinnya 40 '
+//   }
+// }
+//
+// let member = new Members('Yusup', 30)
+//
+// console.log(Members.getPoint())
 
 // ===========================================================
 // Shorthand dan Destructuring object.
