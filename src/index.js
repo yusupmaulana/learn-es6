@@ -1,10 +1,10 @@
 // =================================================================
 // import dan export
 
-import * as app from './app/index'
+// import * as app from './app/index'
+import forum from './app/forum' /*export default kita nggak perlu ngasih nama saat export nya, dan saat memakai nya kita bisa memberikan nama bebas*/
 
-
-console.log(app.forum)
+console.log(forum)
 
 
 

@@ -1,3 +1,3 @@
-export let forum = {
-  total : 200
+export default {
+  total : 700
 }
