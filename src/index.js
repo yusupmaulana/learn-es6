@@ -1,8 +1,20 @@
+// =================================================================
+// import dan export
+
+import * as app from './app/index'
+
+
+console.log(app.forum)
+
+
+
+
+
 // ==================================================================
 // Webpack module bundler
 
-const test = 'kerad euy!'
-console.log(test)
+// const test = 'kerad euy!'
+// console.log(test)
 
 //babel dan webpack masih terpisah, untuk membuatnya terhubung gunakan package babel-loader jadi sintaks es6 akan di ubah ke es5 dulu baru kemudian di bundle
 
