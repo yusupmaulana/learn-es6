@@ -1,14 +1,33 @@
+// ===================================================================
+// konsep promises
+
+let getMember = new Promise((resolve, reject) => {
+  if (true) {
+    resolve('berhasil')
+  }
+  reject('gagal!')
+}).then(msg => {
+  console.log('ini then yang baru '+msg);
+}).catch(msg => {
+  console.log('ini dari catch '+ msg);
+})
+
+console.log(getMember);
+
+// let getMember = () => new Promise(function(resolve, reject) {
+//   return new Promise((resolve, reject) => {
+//     // ....
+//   })
+// });
+// console.log(getMember());
+
 // =================================================================
 // import dan export
 
 // import * as app from './app/index'
-import forum from './app/forum' /*export default kita nggak perlu ngasih nama saat export nya, dan saat memakai nya kita bisa memberikan nama bebas*/
+// import forum from './app/forum' /*export default kita nggak perlu ngasih nama saat export nya, dan saat memakai nya kita bisa memberikan nama bebas*/
 
-console.log(forum)
-
-
-
-
+// console.log(forum)
 
 // ==================================================================
 // Webpack module bundler
